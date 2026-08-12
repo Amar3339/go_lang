@@ -1,6 +1,6 @@
-// Build a profit calculator ,ask for Revenie,expense,TaxRate.Calculate earning bfore tax earning after tax
-// calculator ration(Ebt/Profit) 
-// output Ebt,profit and the ratioh
+// Build a profit calculator ,ask for Revenue,expense,TaxRate.Calculate (earning before tax), (earning after tax)
+// calculate ratio(Ebt/Profit) 
+// output Ebt,profit and the ratio
 
 
 package main
