@@ -1,7 +1,7 @@
-package main
+// package main
 
-func main() {
+// func main() {
 	
-	println("tehr")
-	// amar()
-}
+// 	println("tehr")
+// 	// amar()
+// }
