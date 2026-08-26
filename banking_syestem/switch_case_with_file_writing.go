@@ -1,6 +1,12 @@
 package main
 
 import "fmt"
+ import "os"
+ func WriteBalance(balance float64){
+ balanceText:=fmt.Sprint(balance)
+ os.WriteFile("balance.txt",[]byte(balanceText),0644)
+ }
+
 
 func main() {
 
@@ -40,6 +46,7 @@ func main() {
             balance += depositAmount
 
             fmt.Println("Your total balance:", balance)
+            WriteBalance(balance)
 
         case 3:
             fmt.Print("Enter your withdrawal amount: ")
@@ -55,13 +62,14 @@ func main() {
             balance -= withdrawAmount
 
             fmt.Println("Your total balance:", balance)
-
+WriteBalance(balance)
         case 4:
             fmt.Println("Bye")
             return
 
         default:
             fmt.Println("Invalid choice")
+            return
         }
 
         fmt.Println("You selected:", choice)
