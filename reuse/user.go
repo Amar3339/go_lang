@@ -1,9 +1,9 @@
-package reuse
+ package reuse
 import (
 	"errors"
 	"fmt"
 	
-	"time"
+    	"time"
 )
 type User struct{
 	firstName string
